@@ -13,7 +13,7 @@ RUN apt-get update && \
                                                gnupg \
                                                lsb-release && \
     curl -fsSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo apt-key add - && \
-    echo "deb https://deb.nodesource.com/node_14.x $(lsb_release -s -c) main" | sudo tee /etc/apt/sources.list.d/nodesource.list && \
+    echo "deb https://deb.nodesource.com/node_12.x $(lsb_release -s -c) main" | sudo tee /etc/apt/sources.list.d/nodesource.list && \
     apt-get update && \
     apt-get install -y --no-install-recommends flake8 \
                                                golang \
